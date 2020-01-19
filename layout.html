@@ -1,156 +1,311 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-* {
-  box-sizing: border-box;
-}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
 
-[class*="col-"] {
-  float: left;
-  padding: 15px;
-}
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
 
-html {
-  font-family: "Lucida Sans", sans-serif;
-}
+        html {
+            font-family: "Lucida Sans", sans-serif;
+        }
 
-.header {
-  background-color: #9933cc;
-  color: #ffffff;
-  padding: 15px;
-}
+        .header {
+            background-color: #9933cc;
+            color: #ffffff;
+            padding: 15px;
+        }
 
-.menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
 
-.menu li {
-  padding: 8px;
-  margin-bottom: 7px;
-  background-color: #33b5e5;
-  color: #ffffff;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
+        .menu li {
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color: #33b5e5;
+            color: #ffffff;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
 
-.menu li:hover {
-  background-color: #0099cc;
-}
+        .menu li:hover {
+            background-color: #0099cc;
+        }
 
-.aside {
-  background-color: #33b5e5;
-  padding: 15px;
-  color: #ffffff;
-  text-align: center;
-  font-size: 14px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
+        .aside {
+            background-color: #33b5e5;
+            padding: 15px;
+            color: #ffffff;
+            text-align: center;
+            font-size: 14px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
 
-.footer {
-  background-color: #0099cc;
-  color: #ffffff;
-  text-align: center;
-  font-size: 12px;
-  padding: 15px;
-}
+        .footer {
+            background-color: #0099cc;
+            color: #ffffff;
+            text-align: center;
+            font-size: 12px;
+            padding: 15px;
+        }
 
-input[type=text], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
+        input[type=text],
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
 
-/* For mobile phones: */
-[class*="col-"] {
-  width: 100%;
-}
+        /* For mobile phones: */
+        [class*="col-"] {
+            width: 100%;
+        }
 
-@media only screen and (min-width: 600px) {
-  /* For tablets: */
-  .col-s-1 {width: 8.33%;}
-  .col-s-2 {width: 16.66%;}
-  .col-s-3 {width: 25%;}
-  .col-s-4 {width: 33.33%;}
-  .col-s-5 {width: 41.66%;}
-  .col-s-6 {width: 50%;}
-  .col-s-7 {width: 58.33%;}
-  .col-s-8 {width: 66.66%;}
-  .col-s-9 {width: 75%;}
-  .col-s-10 {width: 83.33%;}
-  .col-s-11 {width: 91.66%;}
-  .col-s-12 {width: 100%;}
-}
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
-}
-</style>
+        .btnblue {
+            height: 50px;
+            width: 50px;
+            background-color: rgb(57, 180, 236);
+            border-radius: 4px;
+            padding: 12px 20px;
+            margin: 8px 0;
+
+        }
+
+        .btngreen {
+            height: 50px;
+            width: 50px;
+            background-color: rgb(57, 236, 81);
+            border-radius: 4px;
+            padding: 12px 20px;
+            margin: 8px 0;
+
+        }
+
+        .btnred {
+            height: 50px;
+            width: 50px;
+            background-color: rgb(236, 93, 57);
+            border-radius: 4px;
+            padding: 12px 20px;
+            margin: 8px 0;
+
+        }
+
+        .btnviolet {
+            height: 50px;
+            width: 50px;
+            background-color: rgb(84, 57, 236);
+            border-radius: 4px;
+            padding: 12px 20px;
+            margin: 8px 0;
+
+        }
+
+        .addimage {
+
+            height: 50px;
+            width: 50px;
+            border-radius: 4px;
+            margin: -13px 0;
+        }
+
+        .upload {
+
+            height: 25px;
+            width: 25px;
+        }
+
+        .formularinput {
+            resize: none;
+            overflow: scroll;
+            border: none;
+        }
+
+        .formulainput {
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        @media only screen and (min-width: 600px) {
+
+            /* For tablets: */
+            .col-s-1 {
+                width: 8.33%;
+            }
+
+            .col-s-2 {
+                width: 16.66%;
+            }
+
+            .col-s-3 {
+                width: 25%;
+            }
+
+            .col-s-4 {
+                width: 33.33%;
+            }
+
+            .col-s-5 {
+                width: 41.66%;
+            }
+
+            .col-s-6 {
+                width: 50%;
+            }
+
+            .col-s-7 {
+                width: 58.33%;
+            }
+
+            .col-s-8 {
+                width: 66.66%;
+            }
+
+            .col-s-9 {
+                width: 75%;
+            }
+
+            .col-s-10 {
+                width: 83.33%;
+            }
+
+            .col-s-11 {
+                width: 91.66%;
+            }
+
+            .col-s-12 {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+
+            /* For desktop: */
+            .col-1 {
+                width: 8.33%;
+            }
+
+            .col-2 {
+                width: 16.66%;
+            }
+
+            .col-3 {
+                width: 25%;
+            }
+
+            .col-4 {
+                width: 33.33%;
+            }
+
+            .col-5 {
+                width: 41.66%;
+            }
+
+            .col-6 {
+                width: 50%;
+            }
+
+            .col-7 {
+                width: 58.33%;
+            }
+
+            .col-8 {
+                width: 66.66%;
+            }
+
+            .col-9 {
+                width: 75%;
+            }
+
+            .col-10 {
+                width: 83.33%;
+            }
+
+            .col-11 {
+                width: 91.66%;
+            }
+
+            .col-12 {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-<div class="header">
-  <h1>Chania</h1>
-</div>
-
-<div class="row">
-  <div class="col-3 col-s-3 menu">
-    <ul>
-      <li>Description</li>
-      <input type="text" id="lname" name="lastname" placeholder="What's it about?">
-      <li>Author</li>
-      <input type="text" id="lname" name="lastname" placeholder="Your name or the company's name.
-      ">
-      <li>Price per participants</li>
-      <input type="text" id="lname" name="lastname" placeholder="0.00 €">
-      <li>background color</li>
-      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-      <li>participants limit</li>
-      <input type="text" id="lname" name="lastname" placeholder="50">
-      <li>participant specification</li>
-      <input type="text" id="lname" name="lastname" placeholder="example: student/adult/sport ...">
-    </ul>
-  </div>
-
-  <div class="col-9 col-s-12">
-    <div class="aside">
-      <h2>What?</h2>
-      <p>Chania is a city on the island of Crete.</p>
-      <h2>Where?</h2>
-      <p>Crete is a Greek island in the Mediterranean Sea.</p>
-      <h2>How?</h2>
-      <p>You can reach Chania airport from all over Europe.</p>
+    <div class="header">
+        <h1>Chania</h1>
     </div>
-  </div>
-</div>
 
-<div class="footer">
-    <button onclick="window.location.href = 'index.html'" >Cancel</button>
-    <button onclick="window.location.href = 'index.html'">Post</button>
-</div>
+    <div class="row">
+        <div class="col-3 col-s-3 menu">
+            <ul>
+                <li>Description</li>
+                <input type="text" id="lname" name="lastname" placeholder="What's it about?">
+                <li>Author</li>
+                <input type="text" id="lname" name="lastname" placeholder="Your name or the company's name.
+      ">
+                <li>Price per participants</li>
+                <input type="text" id="lname" name="lastname" placeholder="0.00 €">
+                <li>background color</li>
+
+
+                <div class="btn-group mr-2" role="group" aria-label="First group">
+
+                    <button type="button" class="btnblue"></button>
+                    <button type="button" class="btngreen"></button>
+                    <button type="button" class="btnviolet"></button>
+                    <button type="button" class="btnred"></button>
+                    <img src="images/addimage.png" alt="add picture" class="addimage">
+                </div>
+
+                <li>participants limit</li>
+                <input type="text" id="lname" name="lastname" placeholder="50">
+                <li>participant specification</li>
+                <input type="text" id="lname" name="lastname" placeholder="example: student/adult/sport ...">
+            </ul>
+        </div>
+
+        <div class="col-9 col-s-12" style="border:1px solid black">
+            <div style="border:1px solid black" height: 100%; width: 100%; margin: 20px; padding: 40px;>
+                <div style="border:1px solid black" height: 100%; width: 100%; margin: 20px; padding: 40px;>
+                    <textarea id="formularinput" style="overflow:auto;resize:none;border: none;" rows="40"
+                        cols="150"></textarea>
+                </div>
+                <div class="btn-group mr-2" role="group" aria-label="First group">
+                    <img src="images/upload.png" alt="add picture" class="upload">
+                    <label for="male">Upload document </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <button onclick="window.location.href = 'index.html'">Cancel</button>
+        <button onclick="window.location.href = 'index.html'">Post</button>
+    </div>
 
 </body>
+
 </html>
