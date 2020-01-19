@@ -24,9 +24,13 @@
         }
 
         .header {
-            background-color: #9933cc;
+            background-color: #272625;
             color: #ffffff;
             padding: 15px;
+        }
+
+        body {
+	        background:#343432;
         }
 
         .menu ul {
@@ -36,11 +40,24 @@
         }
 
         .menu li {
-            padding: 8px;
-            margin-bottom: 7px;
-            background-color: #33b5e5;
+            padding: 2px;
+            margin-bottom: 2px;
             color: #ffffff;
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            border-radius: 5px;
+        }
+
+        input[type=text],
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #71716E;
+            border-radius: 4px;
+            box-sizing: border-box;
+            background-color: #444341;
+            
         }
 
         .menu li:hover {
@@ -57,23 +74,14 @@
         }
 
         .footer {
-            background-color: #0099cc;
+            background-color: #272625;
             color: #ffffff;
             text-align: center;
             font-size: 12px;
             padding: 15px;
         }
 
-        input[type=text],
-        select {
-            width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
+        
 
         /* For mobile phones: */
         [class*="col-"] {
@@ -135,9 +143,12 @@
         }
 
         .formularinput {
-            resize: none;
-            overflow: scroll;
-            border: none;
+            width: 100%;
+            -webkit-box-sizing: border-box;
+            /* Safari/Chrome, other WebKit */
+            -moz-box-sizing: border-box;
+            /* Firefox, other Gecko */
+            box-sizing: border-box;
         }
 
         .formulainput {
@@ -256,6 +267,8 @@
 
     <div class="header">
         <h1>Chania</h1>
+        <button onclick="window.location.href = 'index.html'">Cancel</button>
+        <button onclick="window.location.href = 'index.html'">Post</button>
     </div>
 
     <div class="row">
@@ -269,8 +282,6 @@
                 <li>Price per participants</li>
                 <input type="text" id="lname" name="lastname" placeholder="0.00 €">
                 <li>background color</li>
-
-
                 <div class="btn-group mr-2" role="group" aria-label="First group">
 
                     <button type="button" class="btnblue"></button>
@@ -287,11 +298,11 @@
             </ul>
         </div>
 
-        <div class="col-9 col-s-12" style="border:1px solid black">
+        <div class="col-9 col-s-12">
             <div style="border:1px solid black" height: 100%; width: 100%; margin: 20px; padding: 40px;>
                 <div style="border:1px solid black" height: 100%; width: 100%; margin: 20px; padding: 40px;>
                     <textarea id="formularinput" style="overflow:auto;resize:none;border: none;" rows="40"
-                        cols="150"></textarea>
+                        cols="200"></textarea>
                 </div>
                 <div class="btn-group mr-2" role="group" aria-label="First group">
                     <img src="images/upload.png" alt="add picture" class="upload">
@@ -302,8 +313,7 @@
     </div>
 
     <div class="footer">
-        <button onclick="window.location.href = 'index.html'">Cancel</button>
-        <button onclick="window.location.href = 'index.html'">Post</button>
+        <label for="male">© 2020 Miroy | contact: zetalatakamnelson@yahoo.fr </label>
     </div>
 
 </body>
