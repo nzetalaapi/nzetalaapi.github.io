@@ -1,21 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="createFormular.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
-    <h1>Hey Planet</h1>
-    <div class="wrapper">
-        <div class="btn-group">
-            <button onclick="window.location.href = 'createFormular.html'" >Create</button>
-            <button onclick="window.location.href = 'layout.html'">Explore</button>
-          </div>
+
+    <div class="header">
+        <h1>MIROY</h1>
+
+        <div id=fixedbutton>
+            <div role="group" aria-label="First group" style="color: white;font-size: 14pt">
+                <button id=btncancel>Login</button>
+            </div>
+        </div>
+        <div class="center">
+
+            <button id=btnpost onclick="window.location.href = 'createFormular.html'" style="width: 100%;">Create a new
+                Formular</button><br>
+            <br><div style="width: 100%; margin-top: 15 px;margin-bottom: 15px;">
+                <h9 style="position: relative;
+                float: left;
+                left: 50%;
+                transform: translate(-50%);"> - Or - </h9>
+            </div>
+            <button id=btncancel style="width: 100%;">Explore Statistics</button>
+
+
+
+        </div>
     </div>
-    <script src="index.js"></script>
-    
+
+
+
+    <div class="footer">
+        <label for="bottomtext">© 2020 Miroy | contact: zetalatakamnelson@yahoo.fr </label>
+    </div>
+
 </body>
+
 </html>

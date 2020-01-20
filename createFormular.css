@@ -17,6 +17,21 @@ h8{
   text-decoration: underline;
 }
 
+h9{
+  color: grey;
+  font-size: 12px;
+}
+
+.center {
+  margin: auto;
+  padding: 10px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 30%;
+}
+
 .row::after {
   content: "";
   clear: both;
