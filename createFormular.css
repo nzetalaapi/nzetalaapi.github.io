@@ -325,3 +325,45 @@ select {
       width: 100%;
   }
 }
+
+/*###Desktops, big landscape tablets and laptops(Large, Extra large)####*/
+@media screen and (min-width: 1024px){
+  .center {
+    margin: auto;
+    padding: 10px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 30%;
+  }
+  /*Style*/
+  }
+  
+  /*###Tablet(medium)###*/
+  @media screen and (min-width : 768px) and (max-width : 1023px){
+    .center {
+      margin: auto;
+      padding: 10px;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      width: 700%;
+    }
+  /*Style*/
+  }
+  
+  /*### Smartphones (portrait and landscape)(small)### */
+  @media screen and (min-width : 0px) and (max-width : 767px){
+    .center {
+      margin: auto;
+      padding: 10px;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      width: 95%;
+    }
+  /*Style*/
+  }
