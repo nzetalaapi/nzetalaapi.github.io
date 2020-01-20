@@ -1,23 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="createFormular.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <h1>new formular</h1>
-    <textarea rows = "40%" cols = "60%" name = "description"></textarea>
+<html>
 
-    <div class="wrapper">
-        <div class="btn-group">
-            <button onclick="window.location.href = 'index.html'" >Cancel</button>
-            <button onclick="window.location.href = 'index.html'">Post</button>
-            
-          </div>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="createFormular.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>MIROY</h1>
+
+        <div id=fixedbutton>
+            <div class="btn-group mr-2" role="group" aria-label="First group" style="color: white;font-size: 14pt">
+                <button id=btncancel onclick="window.location.href = 'index.html'">Cancel</button>
+                <button id=btnpost onclick="window.location.href = 'index.html'">Create</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-3 col-s-3 menu"
+            style="border:1px solid black;border-radius: 5px;background-color: #1C1C1F;margin-top: 12px; padding-bottom:5px;margin-bottom: 5px;">
+            <ul>
+                <div
+                    style="border-radius: 5px;border:1px solid black;padding: 5px;background-color:rgba(255,255, 255, 0.2);margin-bottom: 15px;">
+                    <li>Description</li>
+                    <input type="text" id="lname" name="lastname" placeholder="What's it about?"
+                        style="color: white; font-size: 12pt;background-color: rgba(0,0, 0, 0.5);">
+                </div>
+                <div
+                    style="border-radius: 5px;border:1px solid black;padding: 5px;background-color:rgba(255,255, 255, 0.2);margin-bottom: 15px;">
+                    <li>Author</li>
+                    <input type="text" id="lname" name="lastname" placeholder="Your name or the company's name..."
+                        style="color: white; font-size: 12pt;background-color: rgba(0,0, 0, 0.5);">
+                </div>
+                <div
+                    style="border-radius: 5px;border:1px solid black;padding: 5px;background-color:rgba(255,255, 255, 0.2);margin-bottom: 15px;">
+                    <li>Price per participants</li>
+                    <input type="text" id="lname" name="lastname" placeholder="0.00"
+                        style="color: white; font-size: 12pt;background-color: rgba(0,0, 0, 0.5);">
+                </div>
+                <div
+                    style="border-radius: 5px;border:1px solid black;padding: 5px;background-color:rgba(255,255, 255, 0.2);margin-bottom: 15px;">
+                    <li>Participants limit</li>
+                    <input type="text" id="lname" name="lastname" placeholder="Example: 50"
+                        style="color: white; font-size: 12pt;background-color: rgba(0,0, 0, 0.5);">
+                </div>
+                <div
+                    style="border-radius: 5px;border:1px solid black;padding: 5px;background-color:rgba(255,255, 255, 0.2);margin-bottom: 15px;">
+                    <li>Participant specification</li>
+                    <input type="text" id="lname" name="lastname" placeholder="example: student/adult/sport ..."
+                        style="color: white; font-size: 12pt;background-color: rgba(0,0, 0, 0.5);">
+                </div>
+                
+
+                <li>Background color</li>
+                <div class="btn-group mr-2" role="group" aria-label="First group" style="color: white;font-size: 12pt; margin-bottom: 30px;">
+
+                    <button type="button" class="btnblue"></button>
+                    <button type="button" class="btngreen"></button>
+                    <button type="button" class="btnviolet"></button>
+                    <button type="button" class="btnred"></button>
+                    <img src="images/addimage.png" alt="add picture" class="addimage">
+                </div>
+                <h8>Advanced settings</h8>
+
+            </ul>
+        </div>
+
+        <div class="col-9 col-s-12">
+            <div style="border:1px solid black;border-radius: 5px;background-color:#1C1C1F;padding:5px" height: 100%;
+                width: 100%; margin: 20px; padding: 40px;>
+                <div height: 100%; width: 100%; margin: 20px; padding: 40px;>
+                    <textarea id="formularinput" placeholder="Enter your Quiz here ..."
+                        style="overflow:auto;resize:none; border: none; background-color: #1C1C1F;color: white; font-size: 12pt; text-align: justify;"
+                        rows="22" cols="90"></textarea>
+                </div>
+                <div class="btn-group mr-2" role="group" aria-label="First group" style="margin: 12px;">
+                    <img src="images/upload.png" alt="add picture" class="upload">
+                    <h7 for="upload" ;>Upload document </h7>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <label for="bottomtext">© 2020 Miroy | contact: zetalatakamnelson@yahoo.fr </label>
     </div>
 
 </body>
+
 </html>
