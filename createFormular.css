@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+li2{
+  color: white;
+  white-space: nowrap;
+}
+
 h7 {
   color: white;
 }
@@ -168,6 +173,17 @@ select {
 
   height: 25px;
   width: 25px;
+}
+.centertext {
+  margin: auto;
+  margin-top: 25px;
+  padding: 10px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  background-color: #1C1C1F;
 }
 
 
