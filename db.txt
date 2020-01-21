@@ -1,0 +1,6 @@
+{
+  "name": "potatoes",
+  "aka": matador,
+  "number": 123,
+  "string": "Hello World"
+}
