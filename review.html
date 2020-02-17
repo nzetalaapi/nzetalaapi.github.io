@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
+
 </head>
 
 <body>
@@ -21,11 +23,11 @@
             <br>
             <br>
             <div style="width: 100%;">
-                <li2>Author: Zetala</li2>
+                <authorTitle style="color: white;">Author: Zetala</authorTitle>
             </div>
             <br>
             <div style="width: 100%;overflow:hidden;">
-                <li2 style="word-wrap:break-word;display:block;width: 100%;">Description: Evaluation of a New Medecine app </li2>
+                <descriptionTitel style="color: white;word-wrap:break-word;display:block;width: 100%;">Description: Evaluation of a New Medecine app Evaluation of a New Medecine app Evaluation of a New Medecine app </descriptionTitel>
             </div>
             <br>
             <br>
@@ -47,7 +49,13 @@
     <div class="footer">
         <label for="bottomtext">© 2020 Miroy | contact: zetalatakamnelson@yahoo.fr </label>
     </div>
-
+    <script language='javascript'>
+        var authorValue = "Autor: " + localStorage.getItem("authorValue");
+        var descriptionValue = "Description: " + localStorage.getItem("descriptionValue");
+        console.log(descriptionValue + "\n" + authorValue);
+        document.querySelector("authorTitle").innerHTML = authorValue;
+        document.querySelector("descriptionTitel").innerHTML = descriptionValue;
+    </script>
 </body>
 
 </html>
