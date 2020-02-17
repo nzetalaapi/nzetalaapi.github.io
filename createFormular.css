@@ -57,6 +57,7 @@ html {
     padding: 2px;
     color: white;
     font-size: 20px;
+    width: 100%;
 }
 
 body {
@@ -116,42 +117,6 @@ select {
     width: 100%;
 }
 
-.btnblue {
-    height: 50px;
-    width: 50px;
-    background-color: rgb(57, 180, 236);
-    border-radius: 4px;
-    padding: 12px 20px;
-    margin: 8px 0;
-}
-
-.btngreen {
-    height: 50px;
-    width: 50px;
-    background-color: rgb(57, 236, 81);
-    border-radius: 4px;
-    padding: 12px 20px;
-    margin: 8px 0;
-}
-
-.btnred {
-    height: 50px;
-    width: 50px;
-    background-color: rgb(236, 93, 57);
-    border-radius: 4px;
-    padding: 12px 20px;
-    margin: 8px 0;
-}
-
-.btnviolet {
-    height: 50px;
-    width: 50px;
-    background-color: rgb(84, 57, 236);
-    border-radius: 4px;
-    padding: 12px 20px;
-    margin: 8px 0;
-}
-
 .addimage {
     height: 50px;
     width: 50px;
@@ -160,11 +125,6 @@ select {
 }
 
 .upload {
-    height: 25px;
-    width: 25px;
-}
-
-.success {
     height: 25px;
     width: 25px;
 }
@@ -226,6 +186,22 @@ select {
     /* Float the buttons side by side */
     margin: 3px;
     border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#btndone {
+    background-color: #007AFF;
+    /* Green background */
+    color: white;
+    /* White text */
+    padding: 10px 24px;
+    /* Float the buttons side by side */
+    border-radius: 5px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
     border: none;
     font-size: 16px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
